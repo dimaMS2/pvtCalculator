@@ -484,6 +484,7 @@ setCurrentInputs();
 
 function removePreload() {
     document.getElementById("preload").remove();
+    document.getElementById('view').style.opacity = 1
 }
 
 setInterval(removePreload, 7000);
