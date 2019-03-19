@@ -7,6 +7,79 @@
     <link rel="stylesheet" href="css/pvtCalculator.css" type="text/css"/>
 </head>
 <body>
+    
+<div id="preload">
+    <div class="emblem">
+
+        <h1 class="frontText">PVT-calculator</h1>
+        <svg class="flask1" viewBox="0 0 120 100">
+            <defs>
+                <path id="wave"
+                      d="M 0,60 C 30,60 30,65 60,65 90,65 90,60 120,60 150,60 150,65 180,65 210,65 210,60 240,60 v 20 h -240 z"/>
+                <clipPath id="flask">
+                    <path d="M 65,25 75,15 85,25 75,35 A 30 30 0 1 1 65,25 z  "/>
+                </clipPath>
+                <path id="glas" d="M 65,25 75,15 85,25 75,35 A 30 30 0 1 1 65,25 z  "/>
+            </defs>
+
+            <g class="content">
+                <g class="w2" clip-path="url(#flask)" filter="url(#goo)">
+                    <use class="wave2  wave" xlink:href="#wave" x="0" y="-1.5"></use>
+                    <g class="bubbles">
+                        <circle cx="51" cy="72" r="4"/>
+                        <circle cx="42" cy="75" r="5"/>
+                        <circle cx="69" cy="72" r="6"/>
+                        <circle cx="48" cy="70" r="5"/>
+                        <circle cx="64" cy="74" r="6"/>
+                        <circle cx="27" cy="70" r="5"/>
+                        <circle cx="53" cy="76" r="4"/>
+                        <circle cx="58" cy="72" r="5"/>
+                        <circle cx="30" cy="75" r="6"/>
+
+                        <circle cx="69" cy="85" r="4"/>
+                        <circle cx="27" cy="78" r="5"/>
+                        <circle cx="64" cy="82" r="6"/>
+                        <circle cx="30" cy="86" r="5"/>
+                        <circle cx="51" cy="76" r="6"/>
+                        <circle cx="58" cy="80" r="5"/>
+                        <circle cx="53" cy="85" r="4"/>
+                        <circle cx="48" cy="80" r="5"/>
+                        <circle cx="42" cy="81" r="6"/>
+
+                    </g>
+                </g>
+                <g class="w1" clip-path="url(#flask)" filter="url(#goo)">
+                    <use class="wave1 wave" xlink:href="#wave" x="0" y="0"/>
+
+                    <g class="bubbles">
+                        <circle cx="30" cy="72" r="4"/>
+                        <circle cx="29" cy="75" r="5"/>
+                        <circle cx="70" cy="72" r="6"/>
+                        <circle cx="42" cy="70" r="5"/>
+                        <circle cx="37" cy="74" r="6"/>
+                        <circle cx="51" cy="70" r="5"/>
+                        <circle cx="58" cy="76" r="4"/>
+                        <circle cx="64" cy="72" r="5"/>
+                        <circle cx="69" cy="75" r="6"/>
+
+                        <circle cx="51" cy="85" r="4"/>
+                        <circle cx="69" cy="78" r="5"/>
+                        <circle cx="30" cy="82" r="6"/>
+                        <circle cx="64" cy="86" r="5"/>
+                        <circle cx="53" cy="76" r="6"/>
+                        <circle cx="42" cy="80" r="5"/>
+                        <circle cx="58" cy="85" r="4"/>
+                        <circle cx="27" cy="80" r="5"/>
+                        <circle cx="48" cy="81" r="6"/>
+
+                    </g>
+                </g>
+            </g>
+            <use class="glasW" xlink:href="#glas" x="0" y="0"/>
+            <use class="glas" xlink:href="#glas" x="0" y="0"/>
+        </svg>
+    </div>
+</div>    
 
 <div id="view">
     <div id="inputOutput">
@@ -85,80 +158,6 @@
     </div>
     <div id='plotter'></div>
 </div>
-
-<div id="preload">
-    <div class="emblem">
-
-        <h1 class="frontText">PVT-calculator</h1>
-        <svg class="flask1" viewBox="0 0 120 100">
-            <defs>
-                <path id="wave"
-                      d="M 0,60 C 30,60 30,65 60,65 90,65 90,60 120,60 150,60 150,65 180,65 210,65 210,60 240,60 v 20 h -240 z"/>
-                <clipPath id="flask">
-                    <path d="M 65,25 75,15 85,25 75,35 A 30 30 0 1 1 65,25 z  "/>
-                </clipPath>
-                <path id="glas" d="M 65,25 75,15 85,25 75,35 A 30 30 0 1 1 65,25 z  "/>
-            </defs>
-
-            <g class="content">
-                <g class="w2" clip-path="url(#flask)" filter="url(#goo)">
-                    <use class="wave2  wave" xlink:href="#wave" x="0" y="-1.5"></use>
-                    <g class="bubbles">
-                        <circle cx="51" cy="72" r="4"/>
-                        <circle cx="42" cy="75" r="5"/>
-                        <circle cx="69" cy="72" r="6"/>
-                        <circle cx="48" cy="70" r="5"/>
-                        <circle cx="64" cy="74" r="6"/>
-                        <circle cx="27" cy="70" r="5"/>
-                        <circle cx="53" cy="76" r="4"/>
-                        <circle cx="58" cy="72" r="5"/>
-                        <circle cx="30" cy="75" r="6"/>
-
-                        <circle cx="69" cy="85" r="4"/>
-                        <circle cx="27" cy="78" r="5"/>
-                        <circle cx="64" cy="82" r="6"/>
-                        <circle cx="30" cy="86" r="5"/>
-                        <circle cx="51" cy="76" r="6"/>
-                        <circle cx="58" cy="80" r="5"/>
-                        <circle cx="53" cy="85" r="4"/>
-                        <circle cx="48" cy="80" r="5"/>
-                        <circle cx="42" cy="81" r="6"/>
-
-                    </g>
-                </g>
-                <g class="w1" clip-path="url(#flask)" filter="url(#goo)">
-                    <use class="wave1 wave" xlink:href="#wave" x="0" y="0"/>
-
-                    <g class="bubbles">
-                        <circle cx="30" cy="72" r="4"/>
-                        <circle cx="29" cy="75" r="5"/>
-                        <circle cx="70" cy="72" r="6"/>
-                        <circle cx="42" cy="70" r="5"/>
-                        <circle cx="37" cy="74" r="6"/>
-                        <circle cx="51" cy="70" r="5"/>
-                        <circle cx="58" cy="76" r="4"/>
-                        <circle cx="64" cy="72" r="5"/>
-                        <circle cx="69" cy="75" r="6"/>
-
-                        <circle cx="51" cy="85" r="4"/>
-                        <circle cx="69" cy="78" r="5"/>
-                        <circle cx="30" cy="82" r="6"/>
-                        <circle cx="64" cy="86" r="5"/>
-                        <circle cx="53" cy="76" r="6"/>
-                        <circle cx="42" cy="80" r="5"/>
-                        <circle cx="58" cy="85" r="4"/>
-                        <circle cx="27" cy="80" r="5"/>
-                        <circle cx="48" cy="81" r="6"/>
-
-                    </g>
-                </g>
-            </g>
-            <use class="glasW" xlink:href="#glas" x="0" y="0"/>
-            <use class="glas" xlink:href="#glas" x="0" y="0"/>
-        </svg>
-    </div>
-</div>
-
 
 <script src='js/plotly-latest.min.js'></script>
 <script type="text/javascript" src="js/warp.js"></script>
